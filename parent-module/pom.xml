@@ -3,12 +3,14 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.example</groupId>
-    <artifactId>parent-module</artifactId>
+    <artifactId>my-complex-project</artifactId>
     <version>1.0.0</version>
   </parent>
-  <artifactId>web-module</artifactId>
-  <dependencies>
-    <!-- Add dependencies here if any -->
-  </dependencies>
+  <artifactId>parent-module</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+    <module>core-module</module>
+    <module>web-module</module>
+  </modules>
 </project>
 
